@@ -19,18 +19,24 @@ class dbEditor
                 echo '<script language="javascript">';
                 echo 'alert("Name field is empty.")';
                 echo '</script>';
+                echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
+
             }
 
             if (empty($email)) {
                 echo '<script language="javascript">';
                 echo 'alert("Email field is empty.")';
                 echo '</script>';
+                echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
+
             }
 
             if (empty($country_id)) {
                 echo '<script language="javascript">';
                 echo 'alert("country  field is empty.")';
                 echo '</script>';
+                echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
+
             }
         } else {
 
@@ -52,6 +58,8 @@ class dbEditor
             echo '<script language="javascript">';
             echo 'alert("country  field is empty.")';
             echo '</script>';
+            echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
+
 
 
         } else {
@@ -85,18 +93,25 @@ class dbEditor
                 echo '<script language="javascript">';
                 echo 'alert("Name field is empty.")';
                 echo '</script>';
+                echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
+
+
             }
 
             if (empty($email)) {
                 echo '<script language="javascript">';
                 echo 'alert("Email field is empty.")';
                 echo '</script>';
+                echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
+
             }
 
             if (empty($country_id)) {
                 echo '<script language="javascript">';
                 echo 'alert("country  field is empty.")';
                 echo '</script>';
+                echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
+
             }
         }
         else {
@@ -121,6 +136,8 @@ class dbEditor
             echo '<script language="javascript">';
             echo 'alert("country  field is empty.")';
             echo '</script>';
+            echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
+
         }
         else {
 
