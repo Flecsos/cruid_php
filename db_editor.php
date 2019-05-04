@@ -44,10 +44,7 @@ class dbEditor
 
             $this-> $result = mysqli_query($mysqli, "INSERT INTO users(name,email,country_id) VALUES('$name','$email','$country_id')");
             echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
-
-
         }
-
     }
 
     function addCountries()
@@ -60,8 +57,6 @@ class dbEditor
             echo '</script>';
             echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
 
-
-
         } else {
 
 
@@ -72,13 +67,6 @@ class dbEditor
 
         }
     }
-
-
-
-
-
-
-
 
     function editUsers()  {
 
@@ -115,15 +103,10 @@ class dbEditor
             }
         }
         else {
-
-
-
                 global $mysqli;
                 $result = mysqli_query($mysqli, "UPDATE users SET name='$name', email='$email', country_id='$country_id'  WHERE id='$edit_id'");
                 echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
-
         }
-
     }
     function editCountries()
 
@@ -140,17 +123,12 @@ class dbEditor
 
         }
         else {
-
-
             global $mysqli;
             $result = mysqli_query($mysqli, "UPDATE countries SET  country='$country'  WHERE id='$edit_id'");
 
 
            echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
-
-        }
-
-
+       }
 
     }
 
@@ -163,8 +141,6 @@ class dbEditor
 
         $result = mysqli_query($mysqli, "DELETE FROM users  WHERE id='$edit_id'");
         echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
-
-
     }
 
     function deleteCounries()
@@ -173,9 +149,6 @@ class dbEditor
         global $mysqli;
         $result = mysqli_query($mysqli, "DELETE FROM countries  WHERE id='$edit_id'");
         echo "<script type=\"text/javascript\">location.href = 'index.php';</script>";
-
-
-
 
     }
 }
